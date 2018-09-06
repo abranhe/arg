@@ -13,3 +13,6 @@ install:
 
 script:
   - coverage run test.py
+
+notifications:
+  email: false

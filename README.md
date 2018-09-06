@@ -100,7 +100,7 @@ print(arg.at(2))
 
 ### `.at(n)`
 
-> Return the value of the argument at value at **n**
+> Return the value of the argument at value at **n**, otherwise **404**
 
 **Return Type**: `str`
 

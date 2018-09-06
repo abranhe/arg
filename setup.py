@@ -26,6 +26,6 @@ setuptools.setup(
         'Programming Language :: Python :: 3.4',
     ),
     project_urls = {
-        'Source': 'https://github.com/abranhe/argsTo',
+        'Source': 'https://github.com/abranhe/arg',
     },
 )

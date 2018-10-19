@@ -1,5 +1,5 @@
 <p align="center" id="top">
-	<a href="https://pypi.org/project/arg"><img src="https://cdn.abraham.gq/projects/arg/logo.svg"></a>
+	<a href="https://pypi.org/project/arg"><img src="https://cdn.abranhe.com/projects/arg/logo.svg"></a>
 	<br>
 	<br>
 	<br>

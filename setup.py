@@ -1,31 +1,51 @@
-import setuptools
-import sys
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-with open("README.md", "r") as readme:
-    long_description = readme.read()
+"""The setup.py file for lupe"""
 
-setuptools.setup(
-    name = "arg",
-    packages = ["arg"],
-    long_description = long_description,
-    long_description_content_type = "text/markdown",
-    version = "0.0.1",
-    description = "Parse command line arguments made easier...",
-    author = "Carlos Abraham",
-    author_email = "abraham@abranhe.com",
-    url = "https://projects.abranhe.com/arg",
-    classifiers = (
-        "Programming Language :: Python",
-        "Natural Language :: English",
-        "Environment :: Plugins",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
-		'Programming Language :: Python :: 3',
-		'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
+from setuptools import setup, find_packages
+
+DESCRIPTION = 'Parse command-line arguments made easier'
+LONG_DESCRIPTION = open("readme.md").read()
+
+VERSION = '0.0.2'
+URL = 'https://projects.abranhe.com/arg'
+GITHUB_URL = 'https://github.com/abranhe/arg'
+
+setup(
+    name='arg',
+    version=VERSION,
+    description=DESCRIPTION,
+    long_description=LONG_DESCRIPTION,
+    long_description_content_type='text/markdown',
+
+    url=URL,
+    project_urls={'Source': GITHUB_URL},
+
+    author='Abraham Hernandez',
+    author_email='abraham@abranhe.com',
+    license='MIT',
+
+    classifiers=[
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
-    ),
-    project_urls = {
-        'Source': 'https://github.com/abranhe/arg',
-    },
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+
+        'Operating System :: OS Independent',
+        'Operating System :: MacOS',
+        'Operating System :: Unix',
+    ],
+
+    packages=find_packages(),
+    keywords='lib parser args argc',
 )
